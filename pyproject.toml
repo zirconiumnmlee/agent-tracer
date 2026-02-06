@@ -1,0 +1,23 @@
+[project]
+name = "agent-tracer"
+version = "0.1.0"
+description = "A framework-agnostic tracer for LLM agents"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+authors = [
+  { name = "Haoyu Li" }
+]
+
+dependencies = [
+    "tiktoken>=0.12.0",
+]
+
+[build-system]
+requires = ["setuptools>=77.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["agent_tracer"]
+package-dir = {"" = "."}
